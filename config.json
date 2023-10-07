@@ -1,0 +1,50 @@
+{
+    "cuda": true,
+    "task": "vae",
+    "seed": 0,
+    "model": {
+      "pretrained_best_path": null,
+      "activation": "group_sort",
+      "linear": {
+        "type": "bjorck",
+        "parseval": false,
+        "safe_scaling": false,
+        "bjorck_beta": 0.5,
+        "bjorck_iter": 20,
+        "bjorck_order": 1,
+        "bias": true
+      },
+      "encoder": {
+        "l_constant": 2,
+        "groupings": [
+          2,
+          2,
+          1
+        ]
+      },
+      "decoder": {
+        "l_constant": 2,
+        "groupings": [
+          2,
+          2,
+          1]
+      },
+      "per_epoch_proj": {
+        "turned_on": false,
+        "every_n_epochs": 1,
+        "type": "l_2",
+        "bjorck_beta": 0.5,
+        "bjorck_iter": 20,
+        "bjorck_order": 1,
+        "reset_optimizer": false
+      },
+
+      "per_update_proj": {
+        "turned_on": false,
+        "type": "l_2",
+        "bjorck_beta": 0.5,
+        "bjorck_iter": 1,
+        "bjorck_order": 1
+      }
+    }
+  }
