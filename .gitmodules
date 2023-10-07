@@ -1,0 +1,3 @@
+[submodule "lnets"]
+	path = lnets
+	url = https://github.com/cemanil/LNets
