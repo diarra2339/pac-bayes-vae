@@ -1,9 +1,9 @@
 # pac-bayes-vae
 This repository includes the code associated to the paper:
-### Statistical Guarantees for Variational Autoencoders using PAC-Bayesian Theory, NeurIPS 2023
+### Statistical Guarantees for Variational Autoencoders using PAC-Bayesian Theory, (Spotlight at NeurIPS 2023)
 ##### Sokhna Diarra Mbacke, Florence Clerc, Pascal Germain
 
-The codes uses the implementation of [Lipschitz-continuous neural networks](https://github.com/cemanil/LNets) provided by Anil et al., 2019
+The code uses the implementation of [Lipschitz-continuous neural networks](https://github.com/cemanil/LNets) provided by Anil et al., 2019. Part of the code is inspired by the implementation of [Lipschitz VAEs](https://github.com/FabianBarrett/Lipschitz_VAEs) provided by Barrett et al. 2022.
 
 
     
